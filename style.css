@@ -152,3 +152,14 @@ color: #E02C6D;
     
     
 }
+
+footer{
+    color: #FFFFFF;
+    background-color: rgb(13, 11, 43);
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color:blanchedalmond
+}
