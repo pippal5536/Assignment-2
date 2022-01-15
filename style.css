@@ -21,6 +21,22 @@ body{font-family: 'Poppins', sans-serif;
 
 
 /* Section-1 vvv */
+
+@keyframes example {
+    0%{color:white;}
+    25%{color:#E02C6D ;}
+    50%{color:white;}
+    75%{color: #E02C6D;}
+    100%{color:white;}
+  }
+
+  .child-of-section-1 a{
+  animation-name: example;
+  animation-duration: 5s;
+  -o-animation-delay: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  }
 .section-1{
     margin-top: 180px;
     margin-left: 120px;
@@ -162,4 +178,24 @@ footer{
 footer a{
     text-decoration: none;
     color:blanchedalmond
+}
+
+
+/* Making website responsive */
+/* For TAB */
+@media (max-width:992px){
+   .child-of-section-1{
+       grid-template-columns: repeat(1,1fr);
+   }
+
+}
+/* For Mobile */
+@media (max-width:668px){
+    .section-1,  .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-2{
+        grid-template-columns: repeat(2.1fr);
+    }
+    
 }
