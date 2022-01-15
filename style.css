@@ -33,7 +33,7 @@ body{font-family: 'Poppins', sans-serif;
   .child-of-section-1 a{
   animation-name: example;
   animation-duration: 5s;
-  -o-animation-delay: 15s;
+  animation-delay: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   }
@@ -168,6 +168,17 @@ color: #E02C6D;
     
     
 }
+
+.new-customer a {
+    text-decoration: none;
+    color: #E02C6D;
+}
+.new-customer{
+    text-align: center;
+    margin: 170px;
+    
+}
+
 
 footer{
     color: #FFFFFF;
