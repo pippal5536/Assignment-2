@@ -33,7 +33,7 @@ body{font-family: 'Poppins', sans-serif;
   .child-of-section-1 a{
   animation-name: example;
   animation-duration: 5s;
-  animation-delay: 15s;
+  
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   }
@@ -194,19 +194,23 @@ footer a{
 
 /* Making website responsive */
 /* For TAB */
-@media (max-width:992px){
-   .child-of-section-1{
+@media only screen and  (max-width:992px){
+   .section-1, footer{
+       width: 100%;
        grid-template-columns: repeat(1,1fr);
    }
 
 }
+@media only screen and  (max-width:992px){
+    .child-of-section-2{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 /* For Mobile */
-@media (max-width:668px){
-    .section-1,  .footer{
+@media only screen and  (max-width:700px){
+    .section-1, .child-of-section-2, footer, new-customer{
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .section-2{
-        grid-template-columns: repeat(2.1fr);
-    }
-    
 }
